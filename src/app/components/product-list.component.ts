@@ -9,16 +9,16 @@ import { Product } from '../models/product.model';
   selector: 'app-product-list',
   imports: [CommonModule, RouterLink],
   template: `
-    <h2 class="title">Produkty</h2>
-    <a class="add-link" routerLink="/create">+ Dodaj nowy</a>
+    <h2 class="title">Telefony</h2>
+    <a class="add-link" routerLink="/create">+ Dodaj nowy telefon</a>
     <table class="product-table">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Nazwa</th>
-          <th>Cena</th>
-          <th>Status</th>
-          <th>Akcje</th>
+          <th>ID telefonu</th>
+          <th>Nazwa telefonu</th>
+          <th>Cena telefonu</th>
+          <th>Status telefonu</th>
+          <th>Akcje telefonu</th>
         </tr>
       </thead>
       <tbody>

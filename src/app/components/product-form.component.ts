@@ -10,18 +10,18 @@ import { CreateProductModel } from '../models/product.model';
   selector: 'app-product-form',
   imports: [CommonModule, FormsModule],
   template: `
-    <h2 class="form-title">{{ isEdit ? 'Edytuj' : 'Utwórz' }} produkt</h2>
+    <h2 class="form-title">{{ isEdit ? 'Edytuj' : 'Utwórz' }} telefon</h2>
     <form (ngSubmit)="submit()" class="form-container">
       <label>
-        <span class="label-text">Nazwa:</span>
+        <span class="label-text">Nazwa telefonu:</span>
         <input [(ngModel)]="model.name" name="name" required />
       </label>
       <label>
-        <span class="label-text">Cena:</span>
+        <span class="label-text">Cena telefonu:</span>
         <input type="number" [(ngModel)]="model.price" name="price" required />
       </label>
       <label>
-        <span class="label-text">Status:</span>
+        <span class="label-text">Status telefonu:</span>
         <input [(ngModel)]="model.status" type="number" name="status"  required />
       </label>
       <div class="buttons">

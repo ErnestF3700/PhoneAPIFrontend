@@ -9,12 +9,12 @@ import { Product } from '../models/product.model';
   selector: 'app-product-detail',
   imports: [CommonModule, RouterLink],
   template: `
-    <h2 class="detail-title">Szczegóły produktu</h2>
+    <h2 class="detail-title">Szczegóły telefonu</h2>
     <div *ngIf="product" class="detail-container">
       <p><strong>ID:</strong> {{ product.id }}</p>
-      <p><strong>Nazwa:</strong> {{ product.name }}</p>
-      <p><strong>Cena:</strong> {{ product.price }}</p>
-      <p><strong>Status:</strong> {{ product.status }}</p>
+      <p><strong>Nazwa telefonu :</strong> {{ product.name }}</p>
+      <p><strong>Cena telefonu:</strong> {{ product.price }}</p>
+      <p><strong>Status telefonu:</strong> {{ product.status }}</p>
       <button class="back-btn" routerLink="/products">Powrót</button>
     </div>
   `,
